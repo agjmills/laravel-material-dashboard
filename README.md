@@ -13,7 +13,6 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
      - [Menu configuration at runtime](#menu-configuration-at-runtime)
      - [Active menu items](#active-menu-items)
    2. [Plugins](#52-plugins)
-6. [Translations](#6-translations)
 7. [Customize views](#7-customize-views)
 8. [Issues, Questions and Pull Requests](#8-issues-questions-and-pull-requests)
 
@@ -275,27 +274,6 @@ class AppServiceProvider extends ServiceProvider
 
 }
 ```
-The configuration options are the same as in the static configuration files.
-
-A more practical example that actually uses translations and the database:
-
-```php
-    public function boot(Dispatcher $events)
-    {
-        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
-            $event->menu->add(trans('menu.pages'));
-
-            $items = Page::all()->map(function (Page $page) {
-                return [
-                    'text' => $page['title'],
-                    'url' => route('admin.pages.edit', $page)
-                ];
-            });
-
-            $event->menu->add(...$items);
-        });
-    }
-```
 
 This event-based approach is used to make sure that your code that builds the menu runs only when the admin panel is actually displayed and not on every request.
 
@@ -343,19 +321,6 @@ Also the [ChartJS](https://www.chartjs.org/) plugin is supported. If set to `tru
     'chartjs' => true,
 ]
 ```
-
-
-## 6. Translations
-
-At the moment, English, German, French, Dutch, Portuguese and Spanish translations are available out of the box.
-Just specifiy the language in `config/app.php`.
-If you need to modify the texts or add other languages, you can publish the language files:
-
-```
-php artisan vendor:publish --provider="Agjmills\LaravelMaterialDashboard\ServiceProvider" --tag=translations
-```
-
-Now, you can edit translations or add languages in `resources/lang/vendor/material-dashboard`.
 
 ## 7. Customize views
 
