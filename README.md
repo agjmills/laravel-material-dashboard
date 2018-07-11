@@ -1,19 +1,15 @@
-# Creative Tim's Material Dashboard integration with Laravel 5
+# Creative Tim's Material Dashboard Laravel 5
 
 This package provides an easy way to quickly set up [Material Dashboard](https://www.creative-tim.com/product/material-dashboard) with Laravel 5. It has no requirements and dependencies besides Laravel, so you can start building your admin panel immediately. The package just provides a Blade template that you can extend and advanced menu configuration possibilities. A replacement for the `make:auth` Artisan command that uses Material Dashboard styled views instead of the default Laravel ones is also included.
 
 1. [Installation](#1-installation)
 2. [Updating](#2-updating)
 3. [Usage](#3-usage)
-4. [The `make:material-dashboard` artisan command](#4-the-makematerialdashboard-artisan-command)
-   1. [Using the authentication views without the `make:material-dashboard` command](#41-using-the-authentication-views-without-the-makematerialdashboard-command)
 5. [Configuration](#5-configuration)
    1. [Menu](#51-menu)
      - [Custom menu filters](#custom-menu-filters)
      - [Menu configuration at runtime](#menu-configuration-at-runtime)
      - [Active menu items](#active-menu-items)
-   2. [Plugins](#52-plugins)
-7. [Customize views](#7-customize-views)
 8. [Issues, Questions and Pull Requests](#8-issues-questions-and-pull-requests)
 
 ## 1. Installation
@@ -29,7 +25,7 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
     > Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider
 
     ```php
-    Agjmills\LaravelMaterialDashboard\ServiceProvider::class,
+    Agjmills\LaravelMaterialDashboard\MaterialDashboardServiceProvider::class,
     ```
 
 3. Publish the public assets:

@@ -11,7 +11,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Agjmills\\MaterialDashboard\\MaterialDashboardServiceProvider"
+        "Agjmills\\MaterialDashboard\\ServiceProvider"
       ]
     }
   }
