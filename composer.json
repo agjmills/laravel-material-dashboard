@@ -1,8 +1,8 @@
 {
-  "name": "agjmills/laravel-material-dashboard",
+  "name": "asdfx/laravel-material-dashboard",
   "autoload": {
     "psr-4" : {
-      "Agjmills\\MaterialDashboard\\": "src"
+      "Asdfx\\MaterialDashboard\\": "src"
     }
   },
   "require": {
@@ -11,7 +11,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Agjmills\\MaterialDashboard\\ServiceProvider"
+        "Asdfx\\MaterialDashboard\\ServiceProvider"
       ]
     }
   }

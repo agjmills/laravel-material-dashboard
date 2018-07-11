@@ -1,6 +1,6 @@
 <?php
 
-namespace Agjmills\MaterialDashboard;
+namespace Asdfx\MaterialDashboard;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 

@@ -14,7 +14,7 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
 1. Require the package using composer:
 
     ```
-    composer require agjmills/laravel-material-dashboard
+    composer require asdfx/laravel-material-dashboard
     ```
 
 2. Add the service provider to the `providers` in `config/app.php`:
@@ -22,19 +22,19 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
     > Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider
 
     ```php
-    Agjmills\LaravelMaterialDashboard\MaterialDashboardServiceProvider::class,
+    Asdfx\LaravelMaterialDashboard\ServiceProvider::class,
     ```
 
 3. Publish the public assets:
 
     ```
-    php artisan vendor:publish --provider="Agjmills\\MaterialDashboard\\ServiceProvider" --tag=assets
+    php artisan vendor:publish --provider="Asdfx\\MaterialDashboard\\ServiceProvider" --tag=assets
     ```
     
 4. Publish the configuration:
 
     ```
-    php artisan vendor:publish --provider="Agjmills\\MaterialDashboard\\ServiceProvider" --tag=config
+    php artisan vendor:publish --provider="Asdfx\\MaterialDashboard\\ServiceProvider" --tag=config
     ```
 
 ## 2. Updating
@@ -42,13 +42,13 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
 1. To update this package, first update the composer package:
 
     ```
-    composer update agjmills/laravel-material-dashboard
+    composer update asdfx/laravel-material-dashboard
     ```
 
 2. Then, publish the public assets with the `--force` flag to overwrite existing files
 
     ```
-    php artisan vendor:publish --provider="Agjmills\\LaravelMaterialDashboard\\ServiceProvider" --tag=assets --force
+    php artisan vendor:publish --provider="Asdfx\\LaravelMaterialDashboard\\ServiceProvider" --tag=assets --force
     ```
 
 ## 3. Usage
@@ -111,7 +111,7 @@ This is useful when paired with Laravel's ```php artisan make:auth```
 First, publish the configuration file:
 
 ```
-php artisan vendor:publish --provider="Agjmills\\MaterialDashboard\\ServiceProvider" --tag=config
+php artisan vendor:publish --provider="Asdfx\\MaterialDashboard\\ServiceProvider" --tag=config
 ```
 
 Now, edit `config/laravel-material-dashboard.php` to configure the dashboard url, logo, navigation bar background image and menu. All configuration options are explained in the comments. However, I want to shed some light on the `menu` configuration.
