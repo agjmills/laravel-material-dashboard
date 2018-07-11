@@ -1,2 +1,5 @@
-/composer.lock
-/vendor
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/
+.idea/**/tasks.xml
+.idea/dictionaries
