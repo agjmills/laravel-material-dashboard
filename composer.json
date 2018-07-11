@@ -4,5 +4,8 @@
     "psr-0" : {
       "Agjmills\\MaterialDashboard" : "src"
     }
+  },
+  "require": {
+    "laravel/framework": "^5.6"
   }
 }
