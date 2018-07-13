@@ -5,9 +5,10 @@ This package provides an easy way to quickly set up [Material Dashboard](https:/
 1. [Installation](#1-installation)
 2. [Updating](#2-updating)
 3. [Usage](#3-usage)
-4. [Configuration](#5-configuration)
-   1. [Menu](#51-menu)
-5. [Issues, Questions and Pull Requests](#8-issues-questions-and-pull-requests)
+4. [Configuration](#4-configuration)
+   1. [Menu](#41-menu)
+5. [Overriding styles](#5-overriding-styles)
+6. [Issues, Questions and Pull Requests](#6-issues-questions-and-pull-requests)
 
 ## 1. Installation
 
@@ -171,7 +172,17 @@ This is the equivalent of:
 @can ('manage', \App\User::class)
 ```
 
-## 5. Issues, Questions and Pull Requests
+## 5. Overriding styles
+
+The SASS for Material Dashboard is included and published when you use 
+
+    ```
+    php artisan vendor:publish --provider="Asdfx\\MaterialDashboard\\ServiceProvider" --tag=assets
+    ```
+
+In order to extend the material dashboard styles, include `public/vendor/laravel-material-dashboard/scss/material-dashboard.scss` wiithin your compilation scripts to emit to `public/vendor/laravel-material-dashboard/css/material-dashboard.min.css`
+
+## 6. Issues, Questions and Pull Requests
 
 You can report issues and ask questions in the [issues section](https://github.com/agjmills/laravel-material-dashboard/issues). Please start your issue with `ISSUE: ` and your question with `QUESTION: `
 
