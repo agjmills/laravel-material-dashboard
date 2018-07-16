@@ -25,7 +25,7 @@
     </div>
   </div>
 </div>
-<script src=/vendor/laravel-material-dashboard/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="/vendor/laravel-material-dashboard/js/core/jquery.min.js" type="text/javascript"></script>
 <script src="/vendor/laravel-material-dashboard/js/core/popper.min.js" type="text/javascript"></script>
 <script src="/vendor/laravel-material-dashboard/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
 <script src="/vendor/laravel-material-dashboard/js/plugins/perfect-scrollbar.jquery.min.js"></script>
