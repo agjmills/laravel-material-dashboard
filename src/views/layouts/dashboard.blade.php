@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" sizes="76x76" href="/vendor/laravel-material-dashboard/img/apple-icon.png">
     <link rel="icon" type="image/png" href="/vendor/laravel-material-dashboard/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
