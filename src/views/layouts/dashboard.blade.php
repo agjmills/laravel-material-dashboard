@@ -66,8 +66,8 @@
 <script src="/vendor/laravel-material-dashboard/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
 @include('MaterialDashboard::partials.admin-alerts', [
     'hasAlert' => count(session('flash_notification')) > 0,
-    'alertMessage' => session('flash_notification.message'),
-    'alertLevel' => session('flash_notification.level')
+    'alertMessage' => session('flash_notification.0.message'),
+    'alertLevel' => session('flash_notification.0.level')
 ])
 @yield('js')
 </body>
