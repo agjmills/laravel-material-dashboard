@@ -64,11 +64,13 @@
 <script src="/vendor/laravel-material-dashboard/js/plugins/bootstrap-notify.js"></script>
 <script src="/vendor/laravel-material-dashboard/js/plugins/restfulizer.js"></script>
 <script src="/vendor/laravel-material-dashboard/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
-@include('MaterialDashboard::partials.admin-alerts', [
-    'hasAlert' => count(session('flash_notification')) > 0,
-    'alertMessage' => session('flash_notification.0.message'),
-    'alertLevel' => session('flash_notification.0.level')
-])
+@if (session()->has('flash_notification'))
+    @include('MaterialDashboard::partials.admin-alerts', [
+        'hasAlert' => count(session('flash_notification')) > 0,
+        'alertMessage' => session('flash_notification.0.message'),
+        'alertLevel' => session('flash_notification.0.level')
+    ])
+@endif
 @yield('js')
 </body>
 
