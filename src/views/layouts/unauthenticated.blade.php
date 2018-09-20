@@ -28,7 +28,6 @@
 <script src="/vendor/laravel-material-dashboard/js/core/jquery.min.js" type="text/javascript"></script>
 <script src="/vendor/laravel-material-dashboard/js/core/popper.min.js" type="text/javascript"></script>
 <script src="/vendor/laravel-material-dashboard/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="/vendor/laravel-material-dashboard/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <script src="/vendor/laravel-material-dashboard/js/plugins/bootstrap-notify.js"></script>
 <script src="/vendor/laravel-material-dashboard/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
 @yield('js')
