@@ -66,8 +66,8 @@
 @if (session()->has('flash_notification'))
     @include('MaterialDashboard::partials.admin-alerts', [
         'hasAlert' => count(session('flash_notification')) > 0,
-        'alertMessage' => session('flash_notification.0.message'),
-        'alertLevel' => session('flash_notification.0.level')
+        'alertMessage' => session('flash_notification.message'),
+        'alertLevel' => session('flash_notification.level')
     ])
 @endif
 @yield('js')
