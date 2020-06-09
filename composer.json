@@ -1,6 +1,12 @@
 {
   "name": "asdfx/laravel-material-dashboard",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Alex Mills",
+      "email": "alex@asdfx.us"
+    }
+  ],
   "autoload": {
     "psr-4" : {
       "Asdfx\\MaterialDashboard\\": "src"
