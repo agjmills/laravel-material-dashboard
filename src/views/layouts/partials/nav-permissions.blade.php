@@ -1,5 +1,5 @@
-@if (array_has($item, 'permissions', false))
-  @can(array_get($item, 'permissions.action'), array_get($item, 'permissions.resource'))
+@if (Illuminate\Support\Arr::has($item, 'permissions', false))
+  @can(Illuminate\Support\Arr::get($item, 'permissions.action'), Illuminate\Support\Arr::get($item, 'permissions.resource'))
     @include('MaterialDashboard::partials.nav-item')
   @endcan
 @else
