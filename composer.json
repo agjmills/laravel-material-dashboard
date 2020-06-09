@@ -1,5 +1,6 @@
 {
   "name": "asdfx/laravel-material-dashboard",
+  "license": "MIT",
   "autoload": {
     "psr-4" : {
       "Asdfx\\MaterialDashboard\\": "src"
